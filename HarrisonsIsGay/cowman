@@ -1,2 +1,2 @@
 import cowsay
-cowsay('Harrison is gay') == r'''
+cowsay.cow('Harrison is gay')
