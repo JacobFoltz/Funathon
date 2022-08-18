@@ -1,2 +1,5 @@
+Harrison please make sure evrything works by installing cowsay using the instructions below then going to HarrisonsisGay file and running python cowman.py
+
+
 pip install wikipedia
 pip install cowsay
