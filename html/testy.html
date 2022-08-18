@@ -60,13 +60,13 @@ Joseph is a sexy man
     </form> 
  
     <p>Output:</p>
-    <p id = 'output'></p>
+    <p id = "output"></p>
     <py-script>
 
         def sub(*args,**kwargs):
             try:
-                result_place = Element('output')
-                multiplier = int(Element('name').value)
+                result_place = Element("output")
+                multiplier = int(Element("name").value)
                 if multiplier < 0:
                     raise ValueError
             except ValueError:
