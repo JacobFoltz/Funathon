@@ -19,6 +19,11 @@
             <input type="text" id="name" name="name" ><br>
     
             <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+
+            <label for="num">1.1x =</label><br>
+            <input type="text" id="num" name="num"><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
     
     
         </form> 
@@ -33,42 +38,42 @@
                     multiplier = int(Element("name").value)
                     if multiplier < 0:
                         raise ValueError
+                        result_place = Element("output2")
+                    multiplier = int(Element("num").value)
+                    if multiplier < 0:
+                            raise ValueError
                 except ValueError:
                     result_place.write("Please enter a real, positive integer")
                 else:
                     result_place.write("\U0001f36a"*multiplier)
         
         </py-script>
+        
+    def sub(*args,**kwargs):
+        try:
+            result_place = Element("output2")
+            multiplier = int(Element("num").value)
+            if multiplier < 0:
+                raise ValueError
+        except ValueError:
+            result_place.write("Please enter a real, positive integer")
+        else:
+            result_place.write("${:.2f}".format(1.1*multiplier))
+        <py-script>
+
+
+
+
+        </py-script>
 
 <p>This function is as simple as it gets, but variables can be used in all types of functions. A prime example of another function is taxes. Assuming you are in a state where taxes are 10%, a function that could represent the total cost of an object would be y = 1.1x.</p>
 
 <p>Enter a number for x to see how variables work and change functions: </p>
 
-        <form onsubmit="return false">
-            <label for="num">1.1x =</label><br>
-            <input type="text" id="num" name="num"><br>
     
-            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
-    
-    
-        </form> 
-         <input>See if this works</input>
+        <!--<input>See if this works</input> -->
         <p>Y = :</p>
         <p id = "output2"></p>
-        <py-script>
-    
-            def sub(*args,**kwargs):
-                try:
-                    result_place = Element("output2")
-                    multiplier = int(Element("num").value)
-                    if multiplier < 0:
-                        raise ValueError
-                except ValueError:
-                    result_place.write("Please enter a real, positive integer")
-                else:
-                    result_place.write("${:.2f}".format(1.1*multiplier))
-
-        </py-script>
 
     <p> Here is the graph of this function.</p>
 
