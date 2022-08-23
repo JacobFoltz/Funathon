@@ -2,7 +2,11 @@
 <html>
 <head>
 <title>
+<<<<<<< Updated upstream
 Lesson One   
+=======
+Intro to Variables     
+>>>>>>> Stashed changes
 </title>
 <link rel="stylesheet" href="L1StyleSheet.css">
 <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
@@ -22,24 +26,25 @@ Lesson One
 
 
     </form> 
- 
-    <p>Output:</p>
-    <p id = "output"></p>
-    <py-script>
-
-        def sub(*args,**kwargs):
-            try:
-                result_place = Element("output")
-                multiplier = int(Element("name").value)
-                if multiplier < 0:
-                    raise ValueError
-            except ValueError:
-                result_place.write("Please enter a real, positive integer")
-            else:
-                result_place.write("\U0001f36a"*multiplier)
+    <div class="Output">
     
-    </py-script>
+      <p>Output:</p> <p id = "output"></p>
+      </div>
+      <py-script>
 
+          def sub(*args,**kwargs):
+              try:
+                  result_place = Element("output")
+                  multiplier = int(Element("name").value)
+                  if multiplier < 0:
+                      raise ValueError
+              except ValueError:
+                  result_place.write("Please enter a real, positive integer")
+              else:
+                  result_place.write("\U0001f36a"*multiplier) 
+      
+      </py-script>
+    
     <p>However, let's pretend an authority figure has limited us to only eating half the cookies. So, when you have x amount of cookies, you can get y amount of cookies in return. This function can be represented by y = 1/2x, since the amount of cookies is being split in half. Here is an example of the graph.  </p>
 
     <p><iframe src="https://www.desmos.com/calculator/xcfovw8onp?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe></p>
