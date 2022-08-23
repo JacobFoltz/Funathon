@@ -1,0 +1,39 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>
+    Intro variables 2
+    </title>
+    <link rel="stylesheet" href="L1StyleSheet.css">
+    <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    
+    </head>
+    
+    <body>
+
+<p>Enter a number for x to see how variables work and change functions: </p>
+
+        <form onsubmit="return false">
+            <label for="name">1.1x =</label><br>
+            <input type="text" id="name" name="name"><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+    
+    
+        </form> 
+     
+        <p>Y = :</p>
+        <p id = "output"></p>
+        <py-script>
+    
+            def sub(*args,**kwargs):
+                try:
+                    result_place = Element("output")
+                    multiplier = int(Element("name").value)
+                    if multiplier < 0:
+                        raise ValueError
+                except ValueError:
+                    result_place.write("Please enter a real, positive integer")
+                else:
+                    result_place.write("${:.2f}".format(1.1*multiplier))

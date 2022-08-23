@@ -1,0 +1,71 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>
+    Intro variables 2
+    </title>
+    <link rel="stylesheet" href="L1StyleSheet.css">
+    <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    
+    </head>
+    
+    <body>
+
+        <p>Simply put, variables are placeholders in which we can input numbers that change. Variables are the key to math at a higher level. Typically variables are labeled as letters. Although these letters may look complicated, in reality, once you discover the basics of variables you will find them extremely simple and useful. In math, the most basic variables are represented by x and y. X is the number you input, and y is the output you get. So, in a scenario where x = y, the number you input is the number that outputs. Take this example as a scenario, input a number for x and watch that same number output that number of cookies.</p>
+
+        <form onsubmit="return false">
+            <label for="name">x =</label><br>
+            <input type="text" id="name" name="name" ><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+    
+    
+        </form> 
+     
+        <p>Output:</p>
+        <p id = "output"></p>
+        <py-script>
+    
+            def sub(*args,**kwargs):
+                try:
+                    result_place = Element("output")
+                    multiplier = int(Element("name").value)
+                    if multiplier < 0:
+                        raise ValueError
+                except ValueError:
+                    result_place.write("Please enter a real, positive integer")
+                else:
+                    result_place.write("\U0001f36a"*multiplier)
+        
+        </py-script>
+
+<p>This function is as simple as it gets, but variables can be used in all types of functions. A prime example of another function is taxes. Assuming you are in a state where taxes are 10%, a function that could represent the total cost of an object would be y = 1.1x.</p>
+
+<p>Enter a number for x to see how variables work and change functions: </p>
+
+        <form onsubmit="return false">
+            <label for="num">1.1x =</label><br>
+            <input type="text" id="num" name="num"><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+    
+    
+        </form> 
+     
+        <p>Y = :</p>
+        <p id = "output2"></p>
+        <py-script>
+    
+            def sub(*args,**kwargs):
+                try:
+                    result_place = Element("output2")
+                    multiplier = int(Element("num").value)
+                    if multiplier < 0:
+                        raise ValueError
+                except ValueError:
+                    result_place.write("Please enter a real, positive integer")
+                else:
+                    result_place.write("${:.2f}".format(1.1*multiplier))
+
+        </py-script>

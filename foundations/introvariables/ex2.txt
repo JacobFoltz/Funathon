@@ -1,0 +1,11 @@
+Simply put, variables are placeholders in which we can input numbers that change. Variables are the key to math at a higher level. Typically variables are labeled as letters. Although these letters may look complicated, in reality, once you discover the basics of variables you will find them extremely simple and useful. In math, the most basic variables are represented by x and y. X is the number you input, and y is the output you get. So, in a scenario where x = y, the number you input is the number that outputs. Take this example as a scenario, input a number for x and watch that same number output that number of cookies.
+
+
+
+ This function is as simple as it gets, but variables can be used in all types of functions. A prime example of another function is taxes. Assuming you are in a state where taxes are 10%, a function that could represent the total cost of an object would be y = 1.1x.
+
+ Here is the graph of this function.
+
+
+
+ Most functions are written as y = MX + b. M is what we call a coefficient. A coefficient is a number by the variable. This number represents the number that the variable is multiplied. For example, if we had 3x, and x was 4, then 3x would equal 12. B represents a constant. A constant is a number that cannot change. So, in y = 3x + 7, the constant would be 7. Both the constant and the coefficient could be negative. Often you may see the constant equal 0 and therefore not shown, as in y = 2x. Try to edit some functions in this graph below.
