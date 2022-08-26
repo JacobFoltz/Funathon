@@ -2,6 +2,9 @@
 <html>
 
 <head>
+
+
+
 	
 		
 	<script src=
@@ -42,14 +45,20 @@
 <!-- create table -->
 
 <body>
-    <div class="popup" onclick="myFunction()">Click me!
-        <span class="popuptext" id="myPopup">Popup text...</span>
+	<details>
+		<summary><img src="calc2.jpg" alt="Calculator"></summary>
+	<p>
 	<table id="calcu">
 		<tr>
 			<td colspan="3"><input type="text" id="result"></td>
 			<!-- clr() function will call clr to clear all value -->
 			<td><input type="button" value="c" onclick="clr()" /> </td>
+            <td><input type="button" value="i" onclick="dis('i')"/> </td>
             <!--button to make calculator go away-->
+            <td><input type="button" value="n√" onclick="dis('nthRoot(number, root)')"
+                onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="log" onclick="dis('log(number, base)')"
+                onkeydown="myFunction(event)"> </td>
 		</tr>
 		<tr>
 			<!-- create button and assign value to each button -->
@@ -64,6 +73,10 @@
 						onkeydown="myFunction(event)"> </td>
             <td><input type="button" value="%" onclick="dis('%')"
                         onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="π" onclick="dis('pi')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="°" onclick="dis('deg')"
+                        onkeydown="myFunction(event)"> </td>
                 
 		</tr>
 		<tr>
@@ -77,6 +90,10 @@
 						onkeydown="myFunction(event)"> </td>
             <td><input type="button" value="^" onclick="dis('^')"
                         onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="e" onclick="dis('e')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="sin" onclick="dis('sin(')"
+                        onkeydown="myFunction(event)"> </td>
             
 		</tr>
 		<tr>
@@ -88,9 +105,11 @@
 						onkeydown="myFunction(event)"> </td>
 			<td><input type="button" value="-" onclick="dis('-')"
 						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="sqrt" onclick="dis('sqrt(')"
+            <td><input type="button" value="√" onclick="dis('sqrt(')"
                         onkeydown="myFunction(event)"> </td>
             <td><input type="button" value="(" onclick="dis('(')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="cos" onclick="dis('cos(')"
                         onkeydown="myFunction(event)"> </td>
             
 		<tr>
@@ -103,19 +122,16 @@
 
 			<td><input type="button" value="+" onclick="dis('+')"
 						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="log" onclick="dis('log(')"
+            <td><input type="button" value="ln" onclick="dis('log(')"
                     onkeydown="myFunction(event)"> </td>
             <td><input type="button" value=")" onclick="dis(')')"
                     onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="tan" onclick="dis('tan(')"
+                    onkeydown="myFunction(event)"> </td>
 		</tr>
 	</table>
-    </div>
 
 	<script>
-        function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-}
 		// Function that display value
 		function dis(val) {
 			document.getElementById("result").value += val
@@ -128,7 +144,7 @@
 				|| event.key == '6' || event.key == '7'
 				|| event.key == '8' || event.key == '9'
 				|| event.key == '+' || event.key == '-'
-				|| event.key == '*' || event.key == '/' || event.key == '^' || event.key == '%' || event.key == 'sqrt(' || event.key == 'log(' || event.key == '(' || event.key == ')')
+				|| event.key == '*' || event.key == '/' || event.key == '^' || event.key == '%' || event.key == 'sqrt(' || event.key == 'log(' || event.key == '(' || event.key == ')' || event.key == 'π')
 				document.getElementById("result").
                 value += event.key;
 		}
@@ -155,6 +171,8 @@
 			document.getElementById("result").value = ""
 		}
 	</script>
+	</p>
+	</details>
 </body>
 
 </html>

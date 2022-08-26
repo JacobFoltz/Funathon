@@ -9,3 +9,6 @@ Simply put, variables are placeholders in which we can input numbers that change
 
 
  Most functions are written as y = MX + b. M is what we call a coefficient. A coefficient is a number by the variable. This number represents the number that the variable is multiplied. For example, if we had 3x, and x was 4, then 3x would equal 12. B represents a constant. A constant is a number that cannot change. So, in y = 3x + 7, the constant would be 7. Both the constant and the coefficient could be negative. Often you may see the constant equal 0 and therefore not shown, as in y = 2x. Try to edit some functions in this graph below.
+
+
+
