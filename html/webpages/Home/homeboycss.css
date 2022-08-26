@@ -1,0 +1,21 @@
+nav ul li{
+    height: 5%;
+    width:5%
+
+}
+nav ul li a{
+    font-size:medium;
+    color:Black
+}
+.second{
+    position:relative;
+    bottom:10px;
+    float:right;
+}
+nav ul{
+    position:absolute;
+    background-color:#5a87e0
+}
+body{
+    background-color:#9EA2B5;
+}
