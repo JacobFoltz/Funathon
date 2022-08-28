@@ -19,12 +19,34 @@ nav{
 nav li{
     height: 5%;
     width:5%;
-    margin-right:200px; margin-left:200px;
+    margin-right:250px; margin-left:270px;
+    text-align:center;
 
 }
 nav ul li a{
-    font-size:medium;
+    font-size:large;
     color:Black;
+    text-align:center;
 }
 
+header{
+    padding:2%;
+    text-align:center;
+    font-size:larger;
+}
+.InfoBody{
+    text-align:center;
+    padding:1%;
+    font-size:large;
+}
 
+.start{
+    text-align:center;
+    padding:1%;
+    font-size:large;
+}
+a{
+    
+    color:black;
+    font-weight:bolder;
+}
