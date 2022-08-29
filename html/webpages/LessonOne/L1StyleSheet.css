@@ -74,3 +74,6 @@ img{
       text-align:center;
       font-weight:bolder;
   }
+  .topstuck{
+    position:fixed;
+  }

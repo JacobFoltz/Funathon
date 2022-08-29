@@ -53,91 +53,10 @@ Intro to Variables
 <!-- create table -->
 
 <body>
-	<details>
-		<summary><img src="calc2.jpg" alt="Calculator"></summary>
+	
 	<p>
-	<table id="calcu">
-		<tr>
-			<td colspan="3"><input type="text" id="result"></td>
-			<!-- clr() function will call clr to clear all value -->
-			<td><input type="button" value="c" onclick="clr()" /> </td>
-            <td><input type="button" value="i" onclick="dis('i')"/> </td>
-            <!--button to make calculator go away-->
-            <td><input type="button" value="n√" onclick="dis('nthRoot(number, root)')"
-                onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="log" onclick="dis('log(number, base)')"
-                onkeydown="myFunction(event)"> </td>
-		</tr>
-		<tr>
-			<!-- create button and assign value to each button -->
-			<!-- dis("1") will call function dis to display value -->
-			<td><input type="button" value="1" onclick="dis('1')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="2" onclick="dis('2')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="3" onclick="dis('3')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="/" onclick="dis('/')"
-						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="%" onclick="dis('%')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="π" onclick="dis('pi')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="°" onclick="dis('deg')"
-                        onkeydown="myFunction(event)"> </td>
-                
-		</tr>
-		<tr>
-			<td><input type="button" value="4" onclick="dis('4')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="5" onclick="dis('5')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="6" onclick="dis('6')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="*" onclick="dis('*')"
-						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="^" onclick="dis('^')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="e" onclick="dis('e')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="sin" onclick="dis('sin(')"
-                        onkeydown="myFunction(event)"> </td>
-            
-		</tr>
-		<tr>
-			<td><input type="button" value="7" onclick="dis('7')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="8" onclick="dis('8')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="9" onclick="dis('9')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="-" onclick="dis('-')"
-						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="√" onclick="dis('sqrt(')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="(" onclick="dis('(')"
-                        onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="cos" onclick="dis('cos(')"
-                        onkeydown="myFunction(event)"> </td>
-            
-		<tr>
-			<td><input type="button" value="0" onclick="dis('0')"
-						onkeydown="myFunction(event)"> </td>
-			<td><input type="button" value="." onclick="dis('.')"
-						onkeydown="myFunction(event)"> </td>
-			<!-- solve function call function solve to evaluate value -->
-			<td><input type="button" value="=" onclick="solve()"> </td>
+	<iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
 
-			<td><input type="button" value="+" onclick="dis('+')"
-						onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="ln" onclick="dis('log(')"
-                    onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value=")" onclick="dis(')')"
-                    onkeydown="myFunction(event)"> </td>
-            <td><input type="button" value="tan" onclick="dis('tan(')"
-                    onkeydown="myFunction(event)"> </td>
-		</tr>
-	</table>
 
 	<script>
 		// Function that display value
@@ -180,7 +99,7 @@ Intro to Variables
 		}
 	</script>
 	</p>
-	</details>
+	
 
 <!-- For some reason there were two body's. If there was a reason I apologize but I think it's really dumb and bad so I made it one. -->
 
@@ -198,7 +117,7 @@ Intro to Variables
     </form> 
     <div class="Output">
     
-      <p>Output:</p> <p id = "output"></p>
+      <p>Output:<b id = "output"></b></p>
       </div>
       <py-script>
 
