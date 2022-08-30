@@ -76,4 +76,18 @@ img{
   }
   .topstuck{
     position:fixed;
+    margin-left: 40%;
+    border:none;
+    background-color:#9EA2B5;
+    z-index:-5;
+
+  }
+  .toptext{
+    margin-top:10;
+  }
+  .calculator{
+    justify-content:right;
+    border:none;
+    background-color:#9EA2B5;
+
   }
