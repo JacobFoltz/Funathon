@@ -35,7 +35,7 @@ Adding 4x and 8 to get 12x
 
 Subtracting 12x from 4x to get -8x
 
-Answer: Subtracting 12x from 4x to get -8x Explanation: We look for the first like terms to combine which is 12 and -4x.
+Answer: Subtracting 12x from 4x to get -8x Explanation: We look for the first like terms to combine which are 12 and -4x.
 
 What is the next step in simplifying this problem:
 
