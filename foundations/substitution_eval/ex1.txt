@@ -1,1 +1,18 @@
-When you know what number a variabled needs to represent
+Sometimes you will know what number a variable represents, and in these situations, you can plug in whatever x is supposed to represent into the equation. For example, if you are trying to calculate how many people can fit on a school bus, a common equation would be 2x + 1. X represents the amount of those weird seats on the school bus. So, if we know that we have 8 seats on our school bus, we know that we can hold 17 people. All you have to do is plug 8 in for x. Remember, that x is multiplied by the coefficient. So, we can multiply 8 by 2 and then add 1 to get 17. Use PEMDAS listed in other questions to solve the problem. However, one thing you need to remember is that coefficients are multiplication, so you need to solve them at the multiplication step.
+
+When solving 3(5x-2) when x = 5, we first do the things in the parenthesis. The first step that comes up in PEMDAS that is applicable after parenthesis is multiplication, so we plug 5 into x and multiply 5 and 5 to get 25. Then, we finish the parenthesis by subtracting 2 from 25 to get 23.
+
+The best way to learn how to efficiently evaluate these types of problems is with practice. Try some of the examples below.
+
+
+When x = 3, solve for Y in Y = x(5+4)
+
+Solution: Y = 27 Explanation: First you need to solve the parenthesis, which equals 9. Then, you multiply x by the inside of the parenthesis. Since x =3, you multiply 9 by 3, giving you 27.
+
+When x = 6, solve for Y in Y = 3(20-3x)
+
+Solution: Y = 6 Explanation: First you look at the parenthesis. Multiplication comes next, so you plug 6 in for x and then multiply 6 and 3 to get 18. Then, you subtract 18 from 20 to get 2. Finally, you multiply 3 by 2 to get 6.
+
+When x = 7, solve for Y = 2x(x-5)
+
+Solution: 28 Explanation: First, we solve the parenthesis, which is 7-5, or 2. Then we multiply 2 by 7 to get 14. Finally, we get 14 times 2, which is 28.
