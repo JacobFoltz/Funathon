@@ -6,21 +6,31 @@
         Homepage
     </title>
     <link rel="stylesheet" href="homeboycss.css">
-
+                            <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                        }
+                        </script>
     
     </head>
     
     <body>
+
         <div class="topBar">
-            <nav>   
-                <ul>
+            <nav plzwork>   
+                <ul class="leftSideNav">
                     <li class="navitem">
                         <a href="lessons.html">Lessons</a>
                     </li>
                     <li class="navitem">
                         <a href="mission.html">Our Mission</a>
                     </li>
-                    <li>
+                    </ul>
+
+                    <ul class="rightSideNav">
+                    <li  class="navitem">
                         <div class="popupclick" onclick="myFunction()">
 	                       <img src="calc.jpeg">                       
                             <span class="popupcalc" id="myPopup">
@@ -28,34 +38,29 @@
                             </span>
                         </div>
                     </li>
-                    <li class="navitem">
+                    <li  class="navitem">
                         <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
                     </li>
                 </ul>
 
             </nav>
-                        <script>
-                        // When the user clicks on <div>, open the popup
-                        function myFunction() {
-                        var popup = document.getElementById("myPopup");
-                        popup.classList.toggle("show");
-                        }
-                        </script>
-        </div>
-        <header>
-            <b>Matheasy</b>
-        </header>
 
-        <div class="InfoBody">
-            <p>
-            Welcome to Matheasy, where we make Algebra 1 lessons eaier for students and teachers.
-            </p>
         </div>
+        <div class="mainContent">
+            <header>
+                <b>Matheasy</b>
+            </header>
+
+            
+                <p>
+                Welcome to Matheasy, where we make Algebra 1 lessons eaier for students and teachers.
+                </p>
         
-        <div class="start">
-        <p>
-        What are you waiting for? <br> <a href="lessons.html">Continue your journey into math now!</a>
-        </p>
+            
+                
+                <p>
+                What are you waiting for? <br> <a href="lessons.html">Continue your journey into math now!</a>
+                </p>
         </div>
 
     </body>
