@@ -53,11 +53,7 @@ header{
     text-align:center;
     font-size:larger;
 }
-.mainContent{
-    text-align:center;
 
-    font-size:large;
-}
 
 
 a{
@@ -140,3 +136,9 @@ a{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+  .mainContent{
+    text-align:center;
+
+    font-size:large;
+}

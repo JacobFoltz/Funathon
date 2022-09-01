@@ -12,7 +12,13 @@ Intro to Variables
 <link rel="stylesheet" href="L1StyleSheet.css">
 <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
+                            <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                        }
+                        </script>
 
 
 <script src=
@@ -53,71 +59,40 @@ Intro to Variables
 <!-- create table -->
 
 <body>
-	<div class="calculator">
-	
-	<iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
 
-
-	<script>
-		// Function that display value
-		function dis(val) {
-			document.getElementById("result").value += val
-		}
-
-		function myFunction(event) {
-			if (event.key == '0' || event.key == '1'
-				|| event.key == '2' || event.key == '3'
-				|| event.key == '4' || event.key == '5'
-				|| event.key == '6' || event.key == '7'
-				|| event.key == '8' || event.key == '9'
-				|| event.key == '+' || event.key == '-'
-				|| event.key == '*' || event.key == '/' || event.key == '^' || event.key == '%' || event.key == 'sqrt(' || event.key == 'log(' || event.key == '(' || event.key == ')' || event.key == 'π')
-				document.getElementById("result").
-                value += event.key;
-		}
-
-		var cal = document.getElementById("calcu");
-		cal.onkeyup = function (event) {
-			if (event.keyCode === 13) {
-				console.log("Enter");
-				let x = document.getElementById("result").value
-				console.log(x);
-				solve();
-			}
-		}
-
-		// Function that evaluates the digit and return result
-		function solve() {
-			let x = document.getElementById("result").value
-			let y = math.evaluate(x)
-			document.getElementById("result").value = y
-		}
-
-		// Function that clear the display
-		function clr() {
-			document.getElementById("result").value = ""
-		}
-	</script>
-	
-	</div>
 
 
 
 <!-- For some reason there were two body's. If there was a reason I apologize but I think it's really dumb and bad so I made it one. -->
 
-	    <nav>   
-            <ul>
-                <li>
-                     <a href="lessons.html">Lessons</a>
-                </li>
-                <li>
-                    <a href="mission.html">Our Mission</a>
-                </li>
-                <li>
-                    <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="topBar">
+            <nav >   
+                <ul class="leftSideNav">
+                    <li class="navitem">
+                        <a href="lessons.html">Lessons</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="mission.html">Our Mission</a>
+                    </li>
+                    </ul>
+
+                    <ul class="rightSideNav">
+                    <li  class="navitem">
+                        <div class="popupclick" onclick="myFunction()">
+	                       <img alt="calculator" src="calc2.jpg">                       
+                            <span class="popupcalc" id="myPopup">
+                                <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
+                            </span>
+                        </div>
+                    </li>
+                    <li  class="navitem">
+                        <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
 
     <p class="toptext">The foundation upon which algebra is built is variables. A variable is a number that we do not know represented by a letter. While letters may seem out of place or complicated in math, the idea is not that complicated. In math, letters follow every concept that numbers follow. We need variables because we need functions that we can pick different numbers to place into the function. In a function, there is an input and an output. The input is usually called "x", and the output is referred to as "y" For example, in this example, x = the total number of cookies, and y is the amount of cookies outputted. So, this would represent the function y = x. Try it out!</p>
 
