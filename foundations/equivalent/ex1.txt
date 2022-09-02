@@ -18,9 +18,9 @@ Click on each letter to see exactly what it means.
 Remembering "PEMDAS" is extremely important in solving math problems. One great way to remember the acronym is "Please excuse my dear Aunt Sally."
 
 One of the most important things you need to understand about "PEMDAS" is that all math needs to happen in that order. For example, in the problem
-3x(5-2), we follow P first, which is parenthesis. So, we do 5-2 = 3. Then, we can skip E because we do not have any exponents. So, then we get to multiplication, which means that we multiply 3x by 3 to get 9x.
+3x(5-2), we follow P first, which stands for parenthesis. So, we do 5-2 = 3. Then, we can skip E because we do not have any exponents. So, then we get to multiplication, which means that we multiply 3x by 3 to get 9x.
 
-There are, however, a few exceptions of this rule. The "PEMDAS" acronym is not entirely true. Multiplication does not come before division, and addition does not come before subtraction. Division and multiplication are on an even plane, and the first to come up in a problem is the one you do first. The same is true for addition and subtraction. However, multiplication and division will always come before addition and subtraction. For example, take the problem 6/2 - 5 * 3. First er do 6/2, which gives us 3. Then, we do 5 * 3, which gives us 15. When we subtract the two numbers we get
+There are, however, a few exceptions to this rule. The "PEMDAS" acronym is not entirely true. Multiplication does not come before division, and addition does not come before subtraction. Division and multiplication are on an even plane, and the first to come up in a problem is the one you do first. The same is true for addition and subtraction. However, multiplication and division will always come before addition and subtraction. For example, take the problem 6/2 - 5 * 3. First er do 6/2, which gives us 3. Then, we do 5 * 3, which gives us 15. When we subtract the two numbers we get
 -12, so our final answer is -12.
 
 Try some examples below.
@@ -30,6 +30,7 @@ Questions
 
 7x -4x + 3 = 3x +3
 
+The answer is 3x+3
 Explanation: We subtract 4x from 7x, which gives us 3x. Then, we add 3 for our final answer of 3x + 3.
 
 5(3+2x) = 15 + 10x
@@ -48,3 +49,11 @@ Math written in parenthesis is always done first. For example, in 5(3+2), we wou
 Exponents should always be done second. For example, in 5^2 * 3, we should solve 5^2 first.
 
 Multiplication always comes third. However, it should be noted that it is on the same level as division. So, whichever comes first in the problem, multiplication or division, is what should be done as the third step.
+
+Division also always comes third. However, it is on the same level as multiplication. Divisions should be completed on the third step in whatever order it or multiplication occurs.
+
+Addition comes last. Addition is on the same level as subtraction. In question 3+6(5), the answer is 33, since you multiply 6 and 5 first, then finally add.
+
+Subtraction comes last with addition. In question 9-6+3(5) =, the answer is 18. You first multiply 3 and 5 to get 15, then subtract 6 from 9 to get 3. Finally, you add 3 and 15 to get 18.
+
+The answer is -26x -12. First, you should multiply -6 by 5x and 2 to get - 30x - 12. Then, you combine those answers with 4x, giving you -26x -12.
