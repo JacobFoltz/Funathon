@@ -1,0 +1,82 @@
+<div style='transform: scale(0.65); position: relative; top: -100px;'>
+    <h3>Solve 4x-6(5x+2):</h3>
+    <p>Choose 1 answer</p>
+    <hr />
+  
+    <div id='block-19' style='padding: 10px;'>
+      <label for='option-19' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='-26x+12' id='option-19' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        -26x+12</label>
+      <span id='result-19'></span>
+    </div>
+    <hr />
+  
+    <div id='block-20' style='padding: 10px;'>
+      <label for='option-20' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='6' id='option-20' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        6</label>
+      <span id='result-20'></span>
+    </div>
+    <hr />
+  
+    <div id='block-21' style='padding: 10px;'>
+      <label for='option-21' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='1/3' id='option-21' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        1/3</label>
+      <span id='result-21'></span>
+    </div>
+    <hr />
+  
+    <div id='block-22' style='padding: 10px;'>
+      <label for='option-22' style=' padding: 5px; font-size: 2.5rem;'>
+        <input type='radio' name='option' value='1/6' id='option-22' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+        1/6</label>
+      <span id='result-22'></span>
+    </div>
+    <hr />
+    <button type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+  </div>
+  <a id='showanswer3'></a>
+  <script>
+    //    The function evaluates the answer and displays result
+    function displayAnswer3() {
+      if (document.getElementById('option-19').checked) {
+        document.getElementById('block-19').style.border = '3px solid limegreen'
+        document.getElementById('result-19').style.color = 'limegreen'
+        document.getElementById('result-19').innerHTML = 'Correct!'
+      }
+      if (document.getElementById('option-20').checked) {
+        document.getElementById('block-20').style.border = '3px solid red'
+        document.getElementById('result-20').style.color = 'red'
+        document.getElementById('result-20').innerHTML = 'Incorrect!'
+        showCorrectAnswer3()
+      }
+      if (document.getElementById('option-21').checked) {
+        document.getElementById('block-21').style.border = '3px solid red'
+        document.getElementById('result-21').style.color = 'red'
+        document.getElementById('result-21').innerHTML = 'Incorrect!'
+        showCorrectAnswer3()
+      }
+      if (document.getElementById('option-22').checked) {
+        document.getElementById('block-22').style.border = '3px solid red'
+        document.getElementById('result-22').style.color = 'red'
+        document.getElementById('result-22').innerHTML = 'Incorrect!'
+        showCorrectAnswer3()
+      }
+    }
+    // the functon displays the link to the correct answer
+    function showCorrectAnswer3() {
+      let showAnswer3 = document.createElement('p')
+      showAnswer3.innerHTML = 'Show Corrent Answer'
+      showAnswer3.style.position = 'relative'
+      showAnswer3.style.top = '-180px'
+      showAnswer3.style.fontSize = '1.75rem'
+      document.getElementById('showanswer3').appendChild(showAnswer3)
+      showAnswer3.addEventListener('click', () => {
+        document.getElementById('block-19').style.border = '3px solid limegreen'
+        document.getElementById('result-19').style.color = 'limegreen'
+        document.getElementById('result-19').innerHTML = 'Correct!'
+        document.getElementById('showanswer3').removeChild(showAnswer3)
+      })
+    }
+  </script>
