@@ -8,7 +8,46 @@
     <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     
+                <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                        }
+                  </script>
+
+                 <link rel="Stylesheet" href="part2style.css"></link>
+
     </head>
+
+        <div class="topBar">
+            <nav >   
+                <ul class="leftSideNav">
+                    <li class="navitem">
+                        <a href="lessons.html">Lessons</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="mission.html">Our Mission</a>
+                    </li>
+                    </ul>
+
+                    <ul class="rightSideNav">
+                    <li  class="navitem">
+                        <div class="popupclick" onclick="myFunction()">
+	                       <img alt="calculator" src="calc2.jpg">                       
+                            <span class="popupcalc" id="myPopup">
+                                <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
+                            </span>
+                        </div>
+                    </li>
+                    <li  class="navitem">
+                        <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
 
     <h1>Intro to Variables</h1>
 
@@ -35,7 +74,7 @@
     
         </form> 
 
-        <p></p><p id = "output2"></p>
+        <p id = "output2"></p>
         <py-script>
         
     def sub(*args,**kwargs):
@@ -48,9 +87,6 @@
             result_place.write("Please enter a real, positive integer")
         else:
             result_place.write("Y = ${:.2f}".format(1.1*multiplier))
-
-
-
 
         </py-script>
 
