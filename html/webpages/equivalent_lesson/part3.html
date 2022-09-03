@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>
+       Lesson 3
+       Equivalent expressions
+       Part 3
+    </title>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+
+
+    <h1>Substitution and evaluating expressions</h1>
+
+    <h3>Part 3</h3>
+
+    <body>
+
+        <p>In life, some things that look very similar are very different, and some things that look very different are very similar. In math, sometimes two equations that look very different equal the same thing. The reason for this is that equations are written in different forms and sometimes not reduced to the point that makes the equation more manageable. For example, the simplest way to write equations is y = Mx+B. You will later learn that this formula is called slop-intercept form. However, there are many other ways to write an equation, and sometimes, we just need to reduce the equation because someone else was too lazy to do so.</p>
+
+        <p>We call this simplifying the equation. Our goal is to have as few numbers as possible and math stuff as possible when we simplify. When we simplify, we need to follow 3 main rules to make sure everything goes smoothly.</p>
+
+        <p>Rule 1: Like terms go together. Xs go with xs and regular numbers go with regular numbers. 3x + 2x = 5x, 3 + 2 = 5, but 3x + 2 simply equals 3x+2. Addition and subtraction may be easy, but multiplication can sometimes be confusing. Later you will learn about multiplying variable by variable, but for now, you need to understand how to multiply regular numbers by a variable. The weird thing is that you cannot add a variable and a regular number, but you can multiply a variable and a regular number. The reason for this seemingly odd rule is how coefficients work in math. 3x can be written as (3)(x), so when we multiply 3x by 6, we can multiply the coefficient of 3 by 6 to get 18x. While we can multiply the coefficient, we cannot add anything to the coefficient because it is in the parenthesis.</p>
+
+        <p>Rule 2: Distribute across all of the parenthesis if included. If you have a number outside the parenthesis, you need to make sure you multiply that number across all of the numbers in the parenthesis. In equation 5(2x-2), make you multiply everything to get 20x-10 as the final answer.
+        </p>
+
+        <p>Rule 3: Use of order of operations. When you are making a meal, you have to follow a certain order or else the meal will not turn out right. Math is the same way. We have to follow an order of operations, which can be helpful to remember by "PEMDAS". </p>
+
+        <p>Click on the buttons below to learn more about PEMDAS.</p>
+
+        <details><summary>P - Parenthesis</summary>
+            <p>Math written in parenthesis is always done first. For example, in 5(3+2), we would solve 3+2 = 5, before multiplying that number by 5. Parenthesis can also include brackets or curly brackets. All PEMDAS rules also stay the same inside of the parenthesis.</p>
+            </details>
+            <details><summary>E - Exponents</summary><p>Exponents should always be done second. For example, in 5^2 * 3, we should solve 5^2 first.</p></details>
+            <details><summary>M - Multiplication</summary><p>Multiplication always comes third. However, it should be noted that it is on the same level as division. So, whichever comes first in the problem, multiplication or division, is what should be done as the third step.</p></details>
+            <details><summary>D - Division</summary><p>Division also always comes third. However, it is on the same level as multiplication. Divisions should be completed on the third step in whatever order it or multiplication occurs.</p></details>
+            <details><summary>A - Addition</summary><p>Addition comes last. Addition is on the same level as subtraction. In question 3+6(5), the answer is 33, since you multiply 6 and 5 first, then finally add.</p></details>
+            <details><summary>S - Subtraction</summary><p>Addition comes last. Addition is on the same level as subtraction. In question 3+6(5), the answer is 33, since you multiply 6 and 5 first, then finally add.</p></details>
+
+            <h2>Questions:</h2>
+
+        <p>What is the coefficient of x in this equation: 6(2x+4)-5x
+        </p>
+        <!--<input>See if this works</input> -->
+        <form class="this_is_how_you_name_them" onsubmit="return false">
+
+            <label for="num">Coefficient of x =</label><br>
+            <input type="text" id="num" name="num"><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+    
+    
+        </form> 
+
+        <p id = "output2"></p>
+        <py-script>
+        
+    def sub(*args,**kwargs):
+        result_place = Element("output2")
+        if Element("num").value == "7":
+            result_place.write("Correct!")
+        else:
+            result_place.write("Answer: 7 - Solution: First you multiply 6 by 2x to get 12x, and then 6 by 4 to 24. Then you subtract 12x-5x, leaving us with the equation 7x+24.")
+            
+            
+        </py-script>
