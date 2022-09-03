@@ -5,7 +5,91 @@
     Intro variables 2
     Lesson 1
     </title>
+
+                <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                        }
+                  </script>
+
+               <script>
+                 //    The function evaluates the answer and displays result
+                 function displayAnswer1() {
+                   if (document.getElementById('option-11').checked) {
+                     document.getElementById('block-11').style.border = '3px solid limegreen'
+                     document.getElementById('result-11').style.color = 'limegreen'
+                     document.getElementById('result-11').innerHTML = 'Correct!'
+                   }
+                   if (document.getElementById('option-12').checked) {
+                     document.getElementById('block-12').style.border = '3px solid red'
+                     document.getElementById('result-12').style.color = 'red'
+                     document.getElementById('result-12').innerHTML = 'Incorrect!'
+                     showCorrectAnswer1()
+                   }
+                   if (document.getElementById('option-13').checked) {
+                     document.getElementById('block-13').style.border = '3px solid red'
+                     document.getElementById('result-13').style.color = 'red'
+                     document.getElementById('result-13').innerHTML = 'Incorrect!'
+                     showCorrectAnswer1()
+                   }
+                   if (document.getElementById('option-14').checked) {
+                     document.getElementById('block-14').style.border = '3px solid red'
+                     document.getElementById('result-14').style.color = 'red'
+                     document.getElementById('result-14').innerHTML = 'Incorrect!'
+                     showCorrectAnswer1()
+                   }
+                 }
+                 // the functon displays the link to the correct answer
+                 function showCorrectAnswer1() {
+                   let showAnswer1 = document.createElement('p')
+                   showAnswer1.innerHTML = 'Solution: Y = 27 Explanation: First you need to solve the parenthesis, which equals 9. Then, you multiply x by the inside of the parenthesis. Since x =3, you multiply 9 by 3, giving you 27.'
+                   showAnswer1.style.position = 'relative'
+                   showAnswer1.style.top = '-180px'
+                   showAnswer1.style.fontSize = '1.75rem'
+                   document.getElementById('showanswer1').appendChild(showAnswer1)
+                   showAnswer1.addEventListener('click', () => {
+                     document.getElementById('block-11').style.border = '3px solid limegreen'
+                     document.getElementById('result-11').style.color = 'limegreen'
+                     document.getElementById('result-11').innerHTML = 'Correct!'
+                     document.getElementById('showanswer1').removeChild(showAnswer1)
+                   })
+                 }
+               </script>
+
+               <link rel="Stylesheet" href="part1css.css"></link>
+
     </head>
+
+          <div class="topBar">
+            <nav >   
+                <ul class="leftSideNav">
+                    <li class="navitem">
+                        <a href="lessons.html">Lessons</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="mission.html">Our Mission</a>
+                    </li>
+                    </ul>
+
+                    <ul class="rightSideNav">
+                    <li  class="navitem">
+                        <div class="popupclick" onclick="myFunction()">
+	                       <img alt="calculator" src="calc2.jpg">                       
+                            <span class="popupcalc" id="myPopup">
+                                <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
+                            </span>
+                        </div>
+                    </li>
+                    <li  class="navitem">
+                        <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
 
     <h1>Substitution and evaluating expressions</h1>
 
@@ -61,49 +145,7 @@
                  <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
                </div>
                <a id='showanswer1'></a>
-               <script>
-                 //    The function evaluates the answer and displays result
-                 function displayAnswer1() {
-                   if (document.getElementById('option-11').checked) {
-                     document.getElementById('block-11').style.border = '3px solid limegreen'
-                     document.getElementById('result-11').style.color = 'limegreen'
-                     document.getElementById('result-11').innerHTML = 'Correct!'
-                   }
-                   if (document.getElementById('option-12').checked) {
-                     document.getElementById('block-12').style.border = '3px solid red'
-                     document.getElementById('result-12').style.color = 'red'
-                     document.getElementById('result-12').innerHTML = 'Incorrect!'
-                     showCorrectAnswer1()
-                   }
-                   if (document.getElementById('option-13').checked) {
-                     document.getElementById('block-13').style.border = '3px solid red'
-                     document.getElementById('result-13').style.color = 'red'
-                     document.getElementById('result-13').innerHTML = 'Incorrect!'
-                     showCorrectAnswer1()
-                   }
-                   if (document.getElementById('option-14').checked) {
-                     document.getElementById('block-14').style.border = '3px solid red'
-                     document.getElementById('result-14').style.color = 'red'
-                     document.getElementById('result-14').innerHTML = 'Incorrect!'
-                     showCorrectAnswer1()
-                   }
-                 }
-                 // the functon displays the link to the correct answer
-                 function showCorrectAnswer1() {
-                   let showAnswer1 = document.createElement('p')
-                   showAnswer1.innerHTML = 'Solution: Y = 27 Explanation: First you need to solve the parenthesis, which equals 9. Then, you multiply x by the inside of the parenthesis. Since x =3, you multiply 9 by 3, giving you 27.'
-                   showAnswer1.style.position = 'relative'
-                   showAnswer1.style.top = '-180px'
-                   showAnswer1.style.fontSize = '1.75rem'
-                   document.getElementById('showanswer1').appendChild(showAnswer1)
-                   showAnswer1.addEventListener('click', () => {
-                     document.getElementById('block-11').style.border = '3px solid limegreen'
-                     document.getElementById('result-11').style.color = 'limegreen'
-                     document.getElementById('result-11').innerHTML = 'Correct!'
-                     document.getElementById('showanswer1').removeChild(showAnswer1)
-                   })
-                 }
-               </script>
+
                </body>
          
          

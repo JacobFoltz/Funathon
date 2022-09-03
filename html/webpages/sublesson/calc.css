@@ -5,7 +5,7 @@ body {
     width: 400px;
     height: 750px;
     display: flex;
-    background-color: #9EA2B5;
+    background-color: #060709;
     flex-direction: column;
     margin: 90px auto;
     border-radius: 20px;
@@ -26,7 +26,7 @@ body {
     height: 80px;
     width: 120px;
     border-radius: 20px;
-    background-color: #9EA2B5;
+    background-color: #292D36;
     padding: 0px 20px;
 }
 #theme-buttons i {
@@ -48,7 +48,7 @@ body {
     font-weight: bold;
 }
 #btn-wrapper {
-    background-color: #9EA2B5;
+    background-color: #292D36;
     height: 100%;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
@@ -66,7 +66,7 @@ body {
 }
 #row-1-btns div, #row-2-btns div, #row-3-btns div, #row-4-btns div, #row-5-btns div {
     border-radius: 14px;
-    background-color: #9EA2B5;
+    background-color: #272B33;
     color: white;
     font-size: 1.5em;
     font-weight: normal;
@@ -106,5 +106,3 @@ body {
     padding: 0px 10px;
     font-size: 18px;
 } 
-
-
