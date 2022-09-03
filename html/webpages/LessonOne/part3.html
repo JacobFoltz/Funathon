@@ -7,30 +7,7 @@
     </title>
     <link rel="pystylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    
-    </head>
-
-    <h1>Intro to Variables</h1>
-
-    <h3>Part 2</h3>
-    
-    <body>
-
-        <p>Letters in math can seem very intimidating. However, these letters, called variables, play a huge role in higher-level math. A variable is an unknown number that can change. Typically, we represent a variable that we want to plug a number into with x and a number that we want to represent an output with we write as y. Although this sounds unnecessary and confusing, this concept is vital to understand. For example, let's say we are buying a car. In some states, the tax for a car is 10%. So, the true cost of a car could be represented by y = 1.1x. We could plug however much the dealer says the car is worth into x, and then we can calculate the expressions and figure out how much the car is worth in total. </p>
-
-        <p>In Y = 1.1x</p>
-        <!--<input>See if this works</input> -->
-        <form class="this_is_how_you_name_them" onsubmit="return false">
-
-            <label for="num">if x =</label><br>
-            <input type="text" id="num" name="num"><br>
-    
-            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
-    
-    
-        </form> 
-
-        <p></p><p id = "output2"></p>
+    <link rel="stylesheet" href="part3style.css"></link>
         <py-script>
         
     def sub(*args,**kwargs):
@@ -48,6 +25,59 @@
 
 
         </py-script>
+
+    </head>
+
+    <body>
+
+            <nav> 
+                <div class="leftsideNav">  
+                    <ul >
+                        <li class="navitem">
+                            <a href="lessons.html">Lessons</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="mission.html">Our Mission</a>
+                        </li>
+                </div>
+                <div class="rightsideNav">
+                        <li  class="navitem">
+                            <div class="popupclick" onclick="myFunction()">
+                            <img src="calc.jpeg">                       
+                                <span class="popupcalc" id="myPopup">
+                                    <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
+                                </span>
+                            </div>
+                        </li>
+                        <li  class="navitem">
+                            <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+    <h1 class="toptext">Intro to Variables</h1>
+
+    <h3>Part 2</h3>
+    
+
+
+        <p>Letters in math can seem very intimidating. However, these letters, called variables, play a huge role in higher-level math. A variable is an unknown number that can change. Typically, we represent a variable that we want to plug a number into with x and a number that we want to represent an output with we write as y. Although this sounds unnecessary and confusing, this concept is vital to understand. For example, let's say we are buying a car. In some states, the tax for a car is 10%. So, the true cost of a car could be represented by y = 1.1x. We could plug however much the dealer says the car is worth into x, and then we can calculate the expressions and figure out how much the car is worth in total. </p>
+
+        <p>In Y = 1.1x</p>
+        <!--<input>See if this works</input> -->
+        <form class="this_is_how_you_name_them" onsubmit="return false">
+
+            <label for="num">if x =</label><br>
+            <input type="text" id="num" name="num"><br>
+    
+            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+    
+    
+        </form> 
+
+        <p></p><p id = "output2"></p>
+
 
 
     
