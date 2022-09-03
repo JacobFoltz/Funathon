@@ -57,7 +57,7 @@ function move() {
         clearInterval(id);
         i = 0;
       } else {
-        width = width+50;
+        width++;
         elem.style.width = width + "%";
       }
     }
