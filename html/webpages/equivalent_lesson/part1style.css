@@ -2,84 +2,84 @@ body{
     background-size:cover;
     background-color:#9EA2B5;
     font-family:sans-serif;
-}
-
-nav *{
+  }
+  
+  nav *{
     display:inline;
-}
-
-nav{
+  }
+  
+  nav{
   z-index:1;
     background-color:#83acff;
-    position:sticky;
+    position:fixed;
     left:0; right:0; top:5px;
     
     box-shadow: 0 0 25px 0 black;
     max-width:100%;
-}
-
-nav ul{
-    width:50%;
+  }
+  
+  nav ul{
+    width:45%;
     background-color:#83acff;
-}
-.leftSideNav{
+  }
+  .leftSideNav{
   float:left;
-}
-.rightSideNav{
+  }
+  .rightSideNav{
   float:right;
-
-}
-.navitem{
+  
+  }
+  .navitem{
     height: 5%;
     width:5%;
     padding:150px;
-
-}
-nav ul li a{
+  
+  }
+  nav ul li a{
     font-size:large;
     color:Black;
    
     font-weight:bolder;
     
-}
-
-header{
+  }
+  
+  header{
   position:static;
     padding-top:5%;
     Padding-left:2%;
     padding-right:2%;
     text-align:center;
     font-size:larger;
-}
-
-
-
-a{
+  }
+  
+  
+  
+  a{
     
     color:black;
     font-weight:bolder;
-}
-.topstuck{
+  }
+  .topstuck{
     position:fixed;
    
-
+  
     
-
+  
   }
   .toptext{
-    margin-top:10;
+    margin-top:100px;
   }
   .calculator{
     justify-content:right;
     border:none;
-
+  
   }
   img{
     height:20px;
     width:20px;
   }
   /* Popup container - can be anything you want */
-.popupclick {
+  .popupclick {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -134,9 +134,3 @@ a{
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-
-  .mainContent{
-    text-align:center;
-
-    font-size:large;
-}
