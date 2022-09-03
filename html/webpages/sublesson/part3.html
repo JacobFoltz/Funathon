@@ -1,0 +1,86 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <title>
+    Eval3
+    Lesson 3
+    </title>
+    </head>
+
+    <h1>Substitution and evaluating expressions</h1>
+
+    <h3>Part 3</h3>
+
+    <body>
+
+        <p>Variables are a number meant to hold numbers. So, we need to learn how to plug in numbers to solve an equation. It should be noted that a variable can stand for anything unless we directly plug in a number for the variable.</p>
+
+        <p>Anytime we plug in a number for a variable we need to plug it in as though there is a parenthesis around it. For example, if I want to plug 5 into 2x-3, I put it in as x as y = 2(5)-3. Don't forget that parenthesis means the same thing as multiplication. So, we first multiply 2 by 5 to get 10 and then subtract 3 to get 7. </p>
+
+        <p>You should calculate these expressions in order of PEMDAS. You keep everything the same by simplifying the expression. Another way to solve the problem would be to simplify the expression first and then plug x in. This route would require less stress, as once you had the reduced answer, you would have only a small amount of math left to do. For example, let's say we want to solve x as 5 in y = 4(x-3). First, we would distribute 4 times x and 3, giving us 4x-12. Now, we can plug 5 in for x, giving us 5(4)-12, which equals 8.</p>
+
+        <p>Activity:</p>
+
+        <details><summary>Solve the question below.</summary>
+
+       <br>
+
+        <p><div style='transform: scale(0.65); position: relative; top: -100px;'>
+            <h3>Harper wants to buy two toys. She has $17. The store she is buying from only sells toys for $7, and the store has a minimum five-dollar fee for entering the store. Therefore, the total price can be represented by y = 7x+5, where y is the total price and x is the number of toys. Does Harper have enough money to buy the toys?)</h3>
+            <p>Choose 1 answer</p>
+             <hr />
+          
+            <div id='block-11' style='padding: 10px;'>
+              <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='Yes' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                Yes</label>
+              <span id='result-11'></span>
+            </div>
+            <hr />
+          
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='No' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                No</label>
+              <span id='result-12'></span>
+            </div>
+            <hr />
+          
+            
+            <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+          </div>
+          <a id='showanswer1'></a>
+          <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer1() {
+              if (document.getElementById('option-12').checked) {
+                document.getElementById('block-12').style.border = '3px solid limegreen'
+                document.getElementById('result-12').style.color = 'limegreen'
+                document.getElementById('result-12').innerHTML = 'Correct!'
+              }
+              if (document.getElementById('option-11').checked) {
+                document.getElementById('block-11').style.border = '3px solid red'
+                document.getElementById('result-11').style.color = 'red'
+                document.getElementById('result-11').innerHTML = 'Incorrect!'
+                showCorrectAnswer1()
+              }
+            
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer1() {
+              let showAnswer1 = document.createElement('p')
+              showAnswer1.innerHTML = 'Correct answer: No Explanation: First we plug in (2) for x. This leaves us with 7(2)+5. Since 19 is greater than 17, Harper cannot afford two toys.'
+              showAnswer1.style.position = 'relative'
+              showAnswer1.style.top = '-180px'
+              showAnswer1.style.fontSize = '1.75rem'
+              document.getElementById('showanswer1').appendChild(showAnswer1)
+              showAnswer1.addEventListener('click', () => {
+                document.getElementById('block-12').style.border = '3px solid limegreen'
+                document.getElementById('result-12').style.color = 'limegreen'
+                document.getElementById('result-12').innerHTML = 'Correct!'
+                document.getElementById('showanswer1').removeChild(showAnswer1)
+              })
+            }
+          </script>
+          </details>
+          </body>
