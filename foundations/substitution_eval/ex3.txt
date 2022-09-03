@@ -1,0 +1,13 @@
+Variables are a number meant to hold numbers. So, we need to learn how to plug in numbers to solve an equation. It should be noted that a variable can stand for anything unless we directly plug in a number for the variable.
+
+Anytime we plug in a number for a variable we need to plug it in as though there is a parenthesis around it. For example, if I want to plug 5 into 2x-3, I put it in as x as y = 2(5)-3. Don't forget that parenthesis means the same thing as multiplication. So, we first multiply 2 by 5 to get 10 and then subtract 3 to get 7. 
+
+You should calculate these expressions in order of PEMDAS. You keep everything the same by simplifying the expression. Another way to solve the problem would be to simplify the expression first and then plug x in. This route would require less stress, as once you had the reduced answer, you would have only a small amount of math left to do. For example, let's say we want to solve x as 5 in y = 4(x-3). First, we would distribute 4 times x and 3, giving us 4x-12. Now, we can plug 5 in for x, giving us 5(4)-12, which equals 8.
+
+
+Activity:
+
+Solve the question below. Harper wants to buy two toys. She has $17. The store she is buying from only sells toys for $7, and the store has a minimum five-dollar fee for entering the store. Therefore, the total price can be represented by y = 7x+5, where y is the total price and x is the number of toys. Does Harper have enough money to buy the toys?
+
+
+Correct answer: No Explanation: First we plug in (2) for x. This leaves us with 7(2)+5. Since 19 is greater than 17, Harper cannot afford two toys.
