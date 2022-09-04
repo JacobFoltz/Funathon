@@ -1,0 +1,36 @@
+body {
+    --color-primary: #83acff;
+    --color-primary-dark: #76a2fc;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    
+    
+    background-color:#9EA2B5; 
+    background-size: cover;
+   
+}
+.title h3{
+    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    margin-top:2em;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+}
+
+.login-form {
+    background-color: blue; 
+    height: 50px;
+    width: 50px;
+    font-size: 10px; 
+    color: white; iu
+  }
+
