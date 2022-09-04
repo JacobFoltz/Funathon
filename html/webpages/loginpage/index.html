@@ -5,11 +5,9 @@
     <title>Ugliest To-Do App</title>
     <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
     <link rel="stylesheet" href="style.css">
-  
   </head>
-  <body>
-  <h3>Welcome to Matheasy!</h3>
   
+  <body>
    
 
 
@@ -40,9 +38,11 @@
     <span id="username"></span>
     <input type="button" value="Logout" id="logout-button">
   <div id="logout-error"></div>
+  <br><br>
+
+  <h3>Welcome to Matheasy!</h3>
   
-    <h1>Completed lessons</h1>
-    
+    <h1>Write down concepts you learn or would like to learn and check them once you fully understand them!</h1>
     <div id="todos"></div>
     <div id="db-loading">Loading to-dos...</div>
     <div id="db-error"></div>
@@ -51,41 +51,10 @@
         <input type="submit" value="Add">
       </form>
       <div id="add-todo-error"></div>
-      <br>
-
-    
-
-
-
-
-
-
     
   </div>
-
-  <style>
-    #myProgress {
-    width: 100%;
-    background-color: grey;
-    z-index: 2;
-    
-    
-  }
-  
-  #myBar {
-    width: 1%;
-    height: 30px;
-    background-color: green;
-    z-index: 2;
-    padding-top: 40px
-    
-    
-  }
-  </style>
-  
   <!-- application code -->
 <script type="text/javascript">
-
 
 userbase.init({ appId: '606782ef-92e6-4f35-9f45-570ba50d70ab' })
     .then((session) => session.user ? showTodos(session.user.username) : showAuth())
