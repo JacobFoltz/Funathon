@@ -1,19 +1,28 @@
-<DOCTYPE html></DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Lessons</title>
-        <link rel="stylesheet" href="stylesheet.css"></link>
+        <meta charset="utf-8">
+        <title>Overview</title>
+        <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+        </script>
+    <link rel="stylesheet" href="overviewstyle.css">
     </head>
     <body>
             <nav> 
                 <div class="leftsideNav">  
-                    <ul >
+                    <ul>
                         <li class="navitem">
                             <a href="lessons.html">Lessons</a>
                         </li>
                         <li class="navitem">
                             <a href="mission.html">Our Mission</a>
                         </li>
+                    
                 </div>
                 <div class="rightsideNav">
                         <li  class="navitem">
@@ -31,12 +40,14 @@
                 </div>
             </nav>
 
-        <h1 class="toptext">Lessons</h1>
+        <h1 class="toptext">Dividing by Zero</h1>
+        <p>Welcome to the lesson for dividing by zero! <br> It is recommended to complete all three parts in order, but feel free to jump around.</p>
+        
         <ul>
-            <li><a rel="IntroVar Link" href="../LessonOne/overview.html">Intro to Variables</a></li>
-            <li><a rel="SubLesson Link" href="../sublesson/overview.html">Substitutions</a></li>
-            <li><a rel="Dividing by Zero Link" href="../divzero-lesson/overview.html">Dividing by Zero</a></li>
-            <li><a rel="Expreesions Link" href="../equivalent_lesson/overview.html">Introduction to Evaluating Expressions</a></li>
+        <li><a href="part1.html">Part 1</a></li>
+        <li><a href="part2.html">Part 2</a></li>
+        <li><a href="part3.html">Part 3</a></li>
         </ul>
+
     </body>
 </html>

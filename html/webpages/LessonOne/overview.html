@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Overview</title>
+        <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+        </script>
+    <link rel="stylesheet" href="overviewstyle.css">
+    </head>
+    <body>
+            <nav> 
+                <div class="leftsideNav">  
+                    
+                        <p class="navitem">
+                            <a href="lessons.html">Lessons</a>
+                        </p>
+                        <p class="navitem">
+                            <a href="mission.html">Our Mission</a>
+                        </p>
+                </div>
+                <div class="rightsideNav">
+                        <div class="navitem">
+                            <div class="popupclick" onclick="myFunction()">
+                            <img src="calc3.jpg">                       
+                                <span class="popupcalc" id="myPopup">
+                                    <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <p  class="navitem">
+                            <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
+                        </p>
+                
+                </div>
+            </nav>
+
+        <h1 class="toptext">Intro to Variables</h1>
+        <p>Welcome to the Intro to Variables! <br> It is recommended to complete all three parts in order, but feel free to jump around.</p>
+        <div>
+            <ul>
+                <li><a href="LessonOne.html">Part 1</a></li>
+                <li><a href="part2.html">Part 2</a></li>
+                <li><a href="part3.html">Part 3</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
