@@ -49,59 +49,59 @@
                 
                 </div>
             </nav>
+    <div class="maintext">
+        <h1 class="toptext">Intro to Variables</h1>
 
-    <h1 class="toptext">Intro to Variables</h1>
-
-    <h3>Part 2</h3>
-    
-
-
-        <p>Simply put, variables are placeholders in which we can input numbers that change. Variables are the key to math at a higher level. Typically variables are labeled as letters. Although these letters may look complicated, in reality, once you discover the basics of variables you will find them extremely simple and useful. In math, the most basic variables are represented by x and y. X is the number you input, and y is the output you get. So, in a scenario where x = y, the number you input is the number that outputs.</p>
-
-        <p>This function is as simple as it gets, but variables can be used in all types of functions. A prime example of another function is taxes. Assuming you are in a state where taxes are 10%, a function that could represent the total cost of an object would be y = 1.1x.</p>
-
-
-        <p>Enter a number for x to see how variables work and change functions: </p>
-
-        <p>In Y = 1.1x</p>
-        <!--<input>See if this works</input> -->
-        <form class="this_is_how_you_name_them" onsubmit="return false">
-
-            <label for="num">if x =</label><br>
-            <input type="text" id="num" name="num"><br>
-    
-            <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
-    
-    
-        </form> 
-
-        <p id = "output2"></p>
-        <py-script>
+        <h3>Part 2</h3>
         
-    def sub(*args,**kwargs):
-        try:
-            result_place = Element("output2")
-            multiplier = int(Element("num").value)
-            if multiplier < 0:
-                raise ValueError
-        except ValueError:
-            result_place.write("Please enter a real, positive integer")
-        else:
-            result_place.write("Y = ${:.2f}".format(1.1*multiplier))
-
-        </py-script>
 
 
-    
+            <p>Simply put, variables are placeholders in which we can input numbers that change. Variables are the key to math at a higher level. Typically variables are labeled as letters. Although these letters may look complicated, in reality, once you discover the basics of variables you will find them extremely simple and useful. In math, the most basic variables are represented by x and y. X is the number you input, and y is the output you get. So, in a scenario where x = y, the number you input is the number that outputs.</p>
 
-    <p> Here is the graph of this function.</p>
-
-
-    <iframe src="https://www.desmos.com/calculator/stw6rtxvkk?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-
-    <p>Most functions are written as y = MX + B. M is what we call a coefficient. A coefficient is a number by the variable. This number represents the number that the variable is multiplied. For example, if we had 3x, and x was 4, then 3x would equal 12. B represents a constant. A constant is a number that cannot change. So, in y = 3x + 7, the constant would be 7. Both the constant and the coefficient could be negative. Often you may see the constant equal 0 and therefore not shown, as in y = 2x. Try to edit some functions in this graph below.</p>
+            <p>This function is as simple as it gets, but variables can be used in all types of functions. A prime example of another function is taxes. Assuming you are in a state where taxes are 10%, a function that could represent the total cost of an object would be y = 1.1x.</p>
 
 
-    <p><iframe src="https://www.desmos.com/calculator/1srq20nymc" width="100%" style="min-height:875px" height="875"></iframe></p>
+            <p>Enter a number for x to see how variables work and change functions: </p>
 
+            <p>In Y = 1.1x</p>
+            <!--<input>See if this works</input> -->
+            <form class="this_is_how_you_name_them" onsubmit="return false">
+
+                <label for="num">if x =</label><br>
+                <input type="text" id="num" name="num"><br>
+        
+                <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+        
+        
+            </form> 
+
+            <p id = "output2"></p>
+            <py-script>
+            
+        def sub(*args,**kwargs):
+            try:
+                result_place = Element("output2")
+                multiplier = int(Element("num").value)
+                if multiplier < 0:
+                    raise ValueError
+            except ValueError:
+                result_place.write("Please enter a real, positive integer")
+            else:
+                result_place.write("Y = ${:.2f}".format(1.1*multiplier))
+
+            </py-script>
+
+
+        
+
+        <p> Here is the graph of this function.</p>
+
+
+        <iframe src="https://www.desmos.com/calculator/stw6rtxvkk?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+        <p>Most functions are written as y = MX + B. M is what we call a coefficient. A coefficient is a number by the variable. This number represents the number that the variable is multiplied. For example, if we had 3x, and x was 4, then 3x would equal 12. B represents a constant. A constant is a number that cannot change. So, in y = 3x + 7, the constant would be 7. Both the constant and the coefficient could be negative. Often you may see the constant equal 0 and therefore not shown, as in y = 2x. Try to edit some functions in this graph below.</p>
+
+
+        <p><iframe src="https://www.desmos.com/calculator/1srq20nymc" width="1000" style="min-height:875px" height="875"></iframe></p>
+    </div>
     </body>

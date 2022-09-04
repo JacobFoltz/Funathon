@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+                    <script>
+                        // When the user clicks on <div>, open the popup
+                        function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                        }
+                  </script>
         <title>Lessons</title>
         <link rel="stylesheet" href="stylesheet.css">
             <meta charset="utf-8">
@@ -31,17 +38,22 @@
                 
                 </div>
             </nav>
+        <div class="maintext">
 
-        <h1 class="toptext">Lessons</h1>
-        <ul>
-        <br>
-            <li><a rel="IntroVar Link" href="../LessonOne/overview.html">Intro to Variables</a></li>
+            <h1 class="toptext">Lessons</h1>
+   
             <br>
-            <li><a rel="SubLesson Link" href="../sublesson/overview.html">Substitutions</a></li>
-            <br>
-            <li><a rel="Dividing by Zero Link" href="../divzero-lesson/overview.html">Dividing by Zero</a></li>
-            <br>
-            <li><a rel="Expreesions Link" href="../equivalent_lesson/overview.html">Introduction to Evaluating Expressions</a></li>
-        </ul>
+                <p><a rel="IntroVar Link" href="../LessonOne/overview.html">Intro to Variables</a></p>
+                <br>
+                <p><a rel="SubLesson Link" href="../sublesson/overview.html">Substitutions</a></p>
+                <br>
+                <p><a rel="Dividing by Zero Link" href="../divzero-lesson/overview.html">Dividing by Zero</a></p>
+                <br>
+                <p><a rel="Expreesions Link" href="../equivalent_lesson/overview.html">Introduction to Evaluating Expressions</a></p>
+                <br>
+                <p>Finished? <br>
+                <a rel="game link" href="../game/index.html"> Click here to put what you've learned to the test!</a>
+                </p>
+        </div>
     </body>
 </html>

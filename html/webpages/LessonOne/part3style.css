@@ -42,7 +42,7 @@ img{
   
 body{
   background-size:cover;
-  background-color:#9EA2B5;
+  background-color:#adb6e4;
   font-family:sans-serif;
 }
 
@@ -174,4 +174,6 @@ img{
   to {opacity:1 ;}
 }
 
-
+.maintext{
+  text-align:center;
+}
