@@ -1,39 +1,47 @@
-<DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+    <html lang="en">
     <head>
     <title>
     Eval2
     Lesson 3
     </title>
+                 <meta charset="utf-8">
 
-    <link rel="stylesheet" href="part2style.css"></link>
+    <link rel="stylesheet" href="part2style.css">
 
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+</script>
     </head>
     <body>
 
             <nav> 
                 <div class="leftsideNav">  
-                    <ul >
-                        <li class="navitem">
+                    
+                        <p class="navitem">
                             <a href="lessons.html">Lessons</a>
-                        </li>
-                        <li class="navitem">
+                        </p>
+                        <p class="navitem">
                             <a href="mission.html">Our Mission</a>
-                        </li>
+                        </p>
                 </div>
                 <div class="rightsideNav">
-                        <li  class="navitem">
+                        <div class="navitem">
                             <div class="popupclick" onclick="myFunction()">
-                            <img src="calc3.jpg">                       
+                            <img alt="caclculator popup" src="calc3.jpg">                       
                                 <span class="popupcalc" id="myPopup">
                                     <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
                                 </span>
                             </div>
-                        </li>
-                        <li  class="navitem">
+                        </div>
+                        <p  class="navitem">
                             <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
-                        </li>
-                    </ul>
+                        </p>
+                
                 </div>
             </nav>
 
@@ -51,11 +59,10 @@
         <p><div style='transform: scale(0.65); position: relative; top: -100px;'>
              <h3>When x = 2, solve for Y in Y = x(5+3)</h3>
              <p>Choose 1 answer</p>
-<<<<<<< HEAD:html/webpages/sublesson/part2 .html
-              <hr />
-=======
-             <hr />
->>>>>>> b82ff533edfa5b1257df0c23ae49187613f7c88f:html/webpages/sublesson/part2.html
+
+              <hr>
+
+
            
              <div id='block-11' style='padding: 10px;'>
                <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
@@ -63,7 +70,7 @@
                  14</label>
                <span id='result-11'></span>
              </div>
-             <hr />
+             <hr>
            
              <div id='block-12' style='padding: 10px;'>
                <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
@@ -71,7 +78,7 @@
                  16</label>
                <span id='result-12'></span>
              </div>
-             <hr />
+             <hr>
            
              <div id='block-13' style='padding: 10px;'>
                <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
@@ -79,7 +86,7 @@
                  20</label>
                <span id='result-13'></span>
              </div>
-             <hr />
+             <hr>
            
              <div id='block-14' style='padding: 10px;'>
                <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
@@ -87,7 +94,7 @@
                  22</label>
                <span id='result-14'></span>
              </div>
-             <hr />
+             <hr>
              <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
            </div>
            <a id='showanswer1'></a>

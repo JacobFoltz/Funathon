@@ -7,32 +7,39 @@ Lesson four
 Division by 0
 Part 2
 </title>
-<link rel="stylesheet" href="part2style.css"></link>
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
+</script>
+<link rel="stylesheet" href="part2style.css">
 </head>
 <body>
             <nav> 
                 <div class="leftsideNav">  
-                    <ul >
-                        <li class="navitem">
+                    
+                        <p class="navitem">
                             <a href="lessons.html">Lessons</a>
-                        </li>
-                        <li class="navitem">
+                        </p>
+                        <p class="navitem">
                             <a href="mission.html">Our Mission</a>
-                        </li>
+                        </p>
                 </div>
                 <div class="rightsideNav">
-                        <li  class="navitem">
+                        <div class="navitem">
                             <div class="popupclick" onclick="myFunction()">
-                            <img src="calc3.jpg">                       
+                            <img alt="caclculator popup" src="calc3.jpg">                       
                                 <span class="popupcalc" id="myPopup">
                                     <iframe height="450" width="850" src="calculator.html" class="topstuck"></iframe>
                                 </span>
                             </div>
-                        </li>
-                        <li  class="navitem">
+                        </div>
+                        <p  class="navitem">
                             <a href="profile.html"><img alt="Profile Icon" height ="35" width ="35" src="profileIcon.png">Profile</a>
-                        </li>
-                    </ul>
+                        </p>
+                
                 </div>
             </nav>
 
