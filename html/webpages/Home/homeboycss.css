@@ -1,139 +1,181 @@
+
+    input[type=text], select {
+      width: 10%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 10%;
+      background-color: #4c4faf;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+
+
+    .Output {
+        width: 10%;
+        float:left;
+    }
+ 
+img{
+  height:20px;
+  width:20px;
+}
+
+
+
+
+  
 body{
-    background-size:cover;
-    background-color:#9EA2B5;
-    font-family:sans-serif;
+  background-size:cover;
+  background-color:#9EA2B5;
+  font-family:sans-serif;
 }
 
 nav *{
-    display:inline;
+  display:inline;
 }
 
 nav{
-  z-index:1;
-    background-color:#83acff;
-    position:sticky;
-    left:0; right:0; top:5px;
-    
-    box-shadow: 0 0 25px 0 black;
-    max-width:100%;
+z-index:1;
+  background-color:#83acff;
+  position:fixed;
+  left:0; right:0; top:5px;
+  max-height:75;
+  box-shadow: 0 0 25px 0 black;
+  max-width:100%;
 }
 
-nav ul{
-    width:50%;
-    background-color:#83acff;
-}
+
 .leftSideNav{
-  float:left;
+float:left;
 }
 .rightSideNav{
-  float:right;
+float:right;
 
 }
 .navitem{
-    height: 5%;
-    width:5%;
-    padding:150px;
+  height: 5%;
+  width:5%;
+  padding:150px;
 
 }
 nav ul li a{
-    font-size:large;
-    color:Black;
-   
-    font-weight:bolder;
-    
+  font-size:large;
+  color:Black;
+ 
+  font-weight:bolder;
+  
 }
 
 header{
-  position:static;
-    padding-top:5%;
-    Padding-left:2%;
-    padding-right:2%;
-    text-align:center;
-    font-size:larger;
+position:static;
+  padding-top:5%;
+  Padding-left:2%;
+  padding-right:2%;
+  text-align:center;
+  font-size:larger;
 }
 
 
 
 a{
-    
-    color:black;
-    font-weight:bolder;
+  
+  color:black;
+  font-weight:bolder;
 }
 .topstuck{
-    position:fixed;
-   
+  position:fixed;
+ 
 
-    
+  
 
-  }
-  .toptext{
-    margin-top:10;
-  }
-  .calculator{
-    justify-content:right;
-    border:none;
+}
+.toptext{
+  margin-top:100px;
+}
+.calculator{
+  justify-content:right;
+  border:none;
 
-  }
-  img{
-    height:20px;
-    width:20px;
-  }
-  /* Popup container - can be anything you want */
+}
+img{
+  height:20px;
+  width:20px;
+}
+/* Popup container - can be anything you want */
 .popupclick {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* The actual popup */
-  .popupclick .popupcalc {
-    visibility: hidden;
-    width: 100px;
-    background-color:#83acff;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-   
-    z-index: 2;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -300px;
-  }
-  
-  /* Popup arrow */
-  .popupclick .popupcalc::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popupclick .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popupclick .popupcalc {
+  visibility: hidden;
+  width: 100px;
+  background-color:#83acff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+ 
+  z-index: 2;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -300px;
+}
+
+/* Popup arrow */
+.popupclick .popupcalc::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popupclick .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
 
   .mainContent{
     text-align:center;
