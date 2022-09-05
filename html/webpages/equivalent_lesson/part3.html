@@ -90,7 +90,7 @@
             
         def sub(*args,**kwargs):
             result_place = Element("output2")
-            if Element("num").value == "7":
+            if int(Element("num").value) == 7:
                 result_place.write("Correct!")
             else:
                 result_place.write("Answer: 7 - Solution: First you multiply 6 by 2x to get 12x, and then 6 by 4 to 24. Then you subtract 12x-5x, leaving us with the equation 7x+24.")
