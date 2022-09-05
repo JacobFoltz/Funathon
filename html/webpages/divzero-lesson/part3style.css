@@ -31,10 +31,7 @@
         float:left;
     }
  
-img{
-  height:20px;
-  width:20px;
-}
+
 
 
 
@@ -42,7 +39,7 @@ img{
   
 body{
   background-size:cover;
-  background-color:#9EA2B5;
+  background-color:#adb6e4;
   font-family:sans-serif;
 }
 
@@ -113,10 +110,7 @@ a{
   border:none;
 
 }
-img{
-  height:20px;
-  width:20px;
-}
+
 /* Popup container - can be anything you want */
 .popupclick {
   position: relative;
@@ -175,3 +169,10 @@ img{
 }
 
 
+.maintext{
+  text-align:center;
+}
+
+.maintext p{
+font-size: 25px;
+}
