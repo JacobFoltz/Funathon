@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Ugliest To-Do App</title>
     <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
   </head>
-  
+  <h3>Welcome to Matheasy!</h3>
   <body>
    
 
@@ -38,11 +39,8 @@
     <span id="username"></span>
     <input type="button" value="Logout" id="logout-button">
   <div id="logout-error"></div>
-  <br><br>
-
-  <h3>Welcome to Matheasy!</h3>
   
-    <h1>Write down concepts you learn or would like to learn and check them once you fully understand them!</h1>
+    <h1>To-Do List</h1>
     <div id="todos"></div>
     <div id="db-loading">Loading to-dos...</div>
     <div id="db-error"></div>
@@ -55,6 +53,7 @@
   </div>
   <!-- application code -->
 <script type="text/javascript">
+  
 
 userbase.init({ appId: '606782ef-92e6-4f35-9f45-570ba50d70ab' })
     .then((session) => session.user ? showTodos(session.user.username) : showAuth())
@@ -188,4 +187,5 @@ function addTodoHandler(e) {
   </script>
 </body>
 </html>
+
 

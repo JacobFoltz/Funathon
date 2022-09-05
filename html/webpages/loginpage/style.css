@@ -26,11 +26,15 @@ body {
     top: 10%;
 }
 
-.login-form {
-    background-color: blue; 
-    height: 50px;
-    width: 50px;
-    font-size: 10px; 
-    color: white; iu
-  }
+.todo-view {
+    height: 200px;
+    background: #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: realative;
+    top: 50px;
+
+}
+ 
 
