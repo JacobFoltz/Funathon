@@ -171,6 +171,9 @@ a{
 .maintext{
   text-align:center;
 }
+#next_lesson{
+  float:right;
+}
 #last_lesson{
   float:left;
 }
