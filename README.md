@@ -1,3 +1,8 @@
 # Funathon
-We are here to have fun!
-Team members: Joseph, Jacob, and Harry man
+The idea for Matheasy started with a sixth grader playing with numbers and developing a passion for finding new ways to solve math problems. Back in the day, this sixth grader, one of our team members, began to play around with exponents, and he learned about derivatives through summation notation. However, many middle and high schoolers find math the most challenging subject.
+
+Our team believes this struggle is primarily due to teachers teaching math one-dimensionally and only allowing the student to solve the problem in one way. This approach severely limits the student; instead of understanding the problem and learning problem-solving skills, the student simply learns the process of solving the problem. This limited perspective leads to difficulties in later math, as the student does not actually understand basic math concepts.
+
+So, we created this website to offer multiple ways of looking at the same problem. Each topic comes with three distinct ways of learning the same problem, and throughout the website, we sprinkled interactive activities. We decided to teach the beginning chapter of Algebra 1, which includes an introduction to variables, evaluating equivalent expressions, substitution, and division by 0. Our goal as a website is to be a separate resource for students to turn to when they do not understand a concept, so we do not have any grading systems or anything that could cause stress. Instead, our final review is a game.
+
+Matheasy allows students to view multiple math lessons from different angles. Each topic contains three lessons that teach with different wording and interactive activities. The site also includes a final game built-in Scratch, as well as a functioning calculator that can process multiple advanced math processes such as sin and calculating the nth root.
