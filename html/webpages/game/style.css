@@ -79,3 +79,12 @@ animation:move-twink-back 200s linear infinite;
   justify-content: center;
   align-items: center;
 }
+
+.home{
+  position:absolute;
+   left:20px; 
+   top:0px;
+   z-index: 5;
+
+
+}
