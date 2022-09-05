@@ -31,10 +31,7 @@
         float:left;
     }
  
-img{
-  height:20px;
-  width:20px;
-}
+
 
 
 
@@ -113,10 +110,7 @@ a{
   border:none;
 
 }
-img{
-  height:20px;
-  width:20px;
-}
+
 /* Popup container - can be anything you want */
 .popupclick {
   position: relative;
