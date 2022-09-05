@@ -180,5 +180,7 @@ img{
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-
+#next_lesson{
+  float:right;
+}
 

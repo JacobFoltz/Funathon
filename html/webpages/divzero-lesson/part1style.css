@@ -91,7 +91,7 @@ position:static;
 
 
 a{
-  
+
   color:black;
   font-weight:bolder;
 }
@@ -174,4 +174,7 @@ a{
 }
 .maintext p{
   font-size: 25px;
+  }
+  #next_lesson{
+    float:right;
   }

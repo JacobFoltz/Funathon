@@ -176,3 +176,6 @@ a{
 .maintext p{
 font-size: 25px;
 }
+#last_lesson{
+  float:left;
+}
